@@ -1,0 +1,28 @@
+# 可持续生活指南网站 robots.txt
+# 允许所有搜索引擎抓取本站所有内容
+
+User-agent: *
+Allow: /
+
+# 指定sitemap位置
+Sitemap: https://sustainable-lifestyle-guide.vercel.app/sitemap.xml
+
+# 允许常见搜索引擎
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# 网站联系信息
+# Website: https://sustainable-lifestyle-guide.vercel.app
+# Contact: 可持续生活指南团队 

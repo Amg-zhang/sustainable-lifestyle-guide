@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言与建议 - 可持续生活指南</title>
+    <meta name="description" content="欢迎为可持续生活指南网站提供宝贵的留言和建议，我们将持续改进为用户提供更好的服务">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .feedback-header {
+            background: linear-gradient(135deg, #4A7C59 0%, #5a8a6a 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .feedback-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .feedback-subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .feedback-section {
+            padding: 60px 0;
+            background-color: #F7F7F7;
+        }
+        
+        .feedback-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .feedback-form-wrapper {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-label {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            color: #4A7C59;
+            margin-bottom: 8px;
+        }
+        
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #F7F7F7;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+            outline: none;
+        }
+        
+        .form-input:focus,
+        .form-textarea:focus {
+            border-color: #4A7C59;
+        }
+        
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form-submit {
+            background-color: #4A7C59;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .form-submit:hover {
+            background-color: #3d6749;
+            transform: translateY(-2px);
+        }
+        
+        .form-submit:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #E8B478;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+        
+        .back-btn:hover {
+            background-color: #d9a066;
+            transform: translateY(-2px);
+        }
+        
+        .thank-you-message {
+            display: none;
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .thank-you-message.show {
+            display: block;
+        }
+        
+        .thank-you-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+        
+        .thank-you-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #4A7C59;
+            margin-bottom: 15px;
+        }
+        
+        .thank-you-text {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        
+        .contact-info {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #4A7C59;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .contact-icon {
+            font-size: 20px;
+            margin-right: 12px;
+            color: #E8B478;
+        }
+        
+        @media (max-width: 768px) {
+            .feedback-title {
+                font-size: 32px;
+            }
+            
+            .feedback-form-wrapper,
+            .contact-info {
+                padding: 25px;
+            }
+            
+            .feedback-container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🌱</span>
+                        <span class="logo-text">可持续生活指南</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link">日常习惯</a></li>
+                    <li><a href="#" class="nav-link">零废弃社区</a></li>
+                    <li><a href="brands.html" class="nav-link">品牌推荐</a></li>
+                    <li><a href="#" class="nav-link">绿色出行</a></li>
+                    <li><a href="#" class="nav-link">环保资讯</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn btn-primary">登录/注册</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 页面标题区 -->
+    <section class="feedback-header">
+        <div class="container">
+            <h1 class="feedback-title">💬 留言与建议</h1>
+            <p class="feedback-subtitle">您的宝贵留言是我们前进的动力，欢迎分享您的想法和建议</p>
+        </div>
+    </section>
+
+    <!-- 反馈表单区 -->
+    <section class="feedback-section">
+        <div class="feedback-container">
+            <a href="index.html" class="back-btn">← 返回首页</a>
+            
+            <!-- 反馈表单 -->
+            <div class="feedback-form-wrapper" id="feedback-form">
+                                 <form action="https://formspree.io/f/xqabvpgv" method="POST" id="contactForm">
+                     <div class="form-group">
+                         <label for="name" class="form-label">姓名 *</label>
+                         <input type="text" id="name" name="name" class="form-input" required placeholder="请输入您的姓名">
+                     </div>
+                     
+                     <div class="form-group">
+                         <label for="email" class="form-label">邮箱 *</label>
+                         <input type="email" id="email" name="email" class="form-input" required placeholder="请输入您的邮箱地址">
+                     </div>
+                     
+                     <div class="form-group">
+                         <label for="message" class="form-label">留言内容 *</label>
+                         <textarea id="message" name="message" class="form-textarea" required placeholder="请详细描述您的意见、建议或遇到的问题..."></textarea>
+                     </div>
+                     
+                     <!-- 隐藏字段，用于Formspree -->
+                     <input type="hidden" name="_subject" value="可持续生活指南 - 用户留言">
+                     <input type="hidden" name="_captcha" value="false">
+                     <input type="hidden" name="_next" value="feedback.html?success=true">
+                    
+                    <button type="submit" class="form-submit" id="submitBtn">
+                        <span id="submitText">提交留言</span>
+                        <span id="loadingText" style="display: none;">正在提交...</span>
+                    </button>
+                </form>
+            </div>
+            
+            <!-- 感谢消息 -->
+            <div class="thank-you-message" id="thankYouMessage">
+                <div class="thank-you-icon">🎉</div>
+                <h2 class="thank-you-title">感谢您的留言！</h2>
+                <p class="thank-you-text">
+                    我们已经收到您的宝贵留言，我们的团队会认真阅读并考虑您的建议。<br>
+                    通常我们会在1-3个工作日内回复您的邮箱。
+                </p>
+                <a href="index.html" class="btn btn-primary">返回首页</a>
+            </div>
+            
+            <!-- 联系信息 -->
+            <div class="contact-info">
+                <h3 class="contact-title">其他联系方式</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span>邮箱：contact@sustainable-lifestyle-guide.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">💬</span>
+                    <span>微信：SustainableLifeGuide</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🕒</span>
+                    <span>工作时间：周一至周五 9:00-18:00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">关于我们</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">平台介绍</a></li>
+                        <li><a href="#">团队信息</a></li>
+                        <li><a href="feedback.html">意见反馈</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">服务支持</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">用户协议</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">关注我们</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">微博</a>
+                        <a href="#" class="social-link">微信</a>
+                        <a href="#" class="social-link">抖音</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 可持续生活指南. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 检查URL参数，如果有success=true则显示感谢消息
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            document.getElementById('feedback-form').style.display = 'none';
+            document.getElementById('thankYouMessage').classList.add('show');
+        }
+        
+        // 表单提交处理
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const submitText = document.getElementById('submitText');
+        const loadingText = document.getElementById('loadingText');
+        
+        form.addEventListener('submit', function(e) {
+            // 显示加载状态
+            submitBtn.disabled = true;
+            submitText.style.display = 'none';
+            loadingText.style.display = 'inline';
+            
+            // 如果Formspree配置正确，表单会自动提交
+            // 如果没有配置Formspree，则显示本地感谢消息
+            setTimeout(function() {
+                if (form.action.includes('your-form-id')) {
+                    // 演示模式：显示本地感谢消息
+                    e.preventDefault();
+                    document.getElementById('feedback-form').style.display = 'none';
+                    document.getElementById('thankYouMessage').classList.add('show');
+                    
+                    // 重置表单
+                    form.reset();
+                    submitBtn.disabled = false;
+                    submitText.style.display = 'inline';
+                    loadingText.style.display = 'none';
+                }
+            }, 1000);
+        });
+        
+        // 表单验证
+        const inputs = form.querySelectorAll('input[required], textarea[required]');
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value.trim() === '') {
+                    this.style.borderColor = '#e74c3c';
+                } else {
+                    this.style.borderColor = '#4A7C59';
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
