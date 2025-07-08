@@ -674,6 +674,32 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.footer-text {
+    margin-bottom: 15px;
+    opacity: 0.8;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 20px;

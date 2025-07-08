@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- 首页 -->
+    <url>
+        <loc>https://sustainable-lifestyle-guide.vercel.app/</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- 首页（带index.html） -->
+    <url>
+        <loc>https://sustainable-lifestyle-guide.vercel.app/index.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- 资讯页面 -->
+    <url>
+        <loc>https://sustainable-lifestyle-guide.vercel.app/article.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 品牌推荐列表页 -->
+    <url>
+        <loc>https://sustainable-lifestyle-guide.vercel.app/brands.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- 品牌推荐文章1 - 高颜值可持续生活用品 -->
+    <url>
+        <loc>https://sustainable-lifestyle-guide.vercel.app/brand1.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 品牌推荐文章2 - 绿色办公与通勤好物 -->
+    <url>
+        <loc>https://sustainable-lifestyle-guide.vercel.app/brand2.html</loc>
+        <lastmod>2024-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 品牌推荐文章3 - 绿色家居品牌 -->
+    <url>
+        <loc>https://sustainable-lifestyle-guide.vercel.app/brand3.html</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 意见反馈页面 -->
+    <url>
+        <loc>https://sustainable-lifestyle-guide.vercel.app/feedback.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset> 
