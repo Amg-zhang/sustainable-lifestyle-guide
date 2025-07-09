@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邮件订阅 - 可持续生活指南</title>
+    <meta name="description" content="订阅可持续生活指南邮件，定期接收环保资讯、零废弃指南和绿色生活小贴士">
+    <meta name="keywords" content="邮件订阅,环保资讯,可持续生活,绿色生活指南">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .subscribe-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .subscribe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .subscribe-title {
+            font-size: 2.2rem;
+            color: #2d5a41;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .subscribe-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .subscribe-form {
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-label {
+            display: block;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #4a7c59;
+        }
+        
+        .subscribe-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #4a7c59, #5a8f6b);
+            color: white;
+            border: none;
+            padding: 16px 24px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .subscribe-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(74, 124, 89, 0.3);
+        }
+        
+        .subscribe-benefits {
+            background: #f8faf9;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .benefits-title {
+            font-size: 1.3rem;
+            color: #2d5a41;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .benefits-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            color: #555;
+        }
+        
+        .benefits-icon {
+            color: #4a7c59;
+            margin-right: 12px;
+            font-size: 1.2rem;
+        }
+        
+        .privacy-note {
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+        
+        .back-home {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background: #f0f4f1;
+            color: #4a7c59;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: #e8f0ea;
+            transform: translateY(-1px);
+        }
+        
+        .back-icon {
+            margin-right: 8px;
+        }
+    </style>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/3b19a94980730d4727d4b275/bb6820ffca78fe0c336d2558d.js");</script>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🌱</span>
+                        <span class="logo-text">可持续生活指南</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="habits.html" class="nav-link">日常习惯</a></li>
+                    <li><a href="community.html" class="nav-link">零废弃社区</a></li>
+                    <li><a href="brands.html" class="nav-link">品牌推荐</a></li>
+                    <li><a href="office.html" class="nav-link">绿色办公</a></li>
+                    <li><a href="commute.html" class="nav-link">绿色出行</a></li>
+                    <li><a href="feedback.html" class="nav-link">留言与建议</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="main">
+        <div class="container">
+            <div class="subscribe-container">
+                <!-- 页面标题 -->
+                <div class="subscribe-header">
+                    <h1 class="subscribe-title">
+                        📧 订阅环保资讯
+                    </h1>
+                    <p class="subscribe-subtitle">
+                        加入我们的环保社区，定期接收最新的可持续生活指南、零废弃小贴士和绿色生活资讯，让环保成为你生活的一部分
+                    </p>
+                </div>
+
+                <!-- 订阅收益说明 -->
+                <div class="subscribe-benefits">
+                    <h3 class="benefits-title">📬 订阅后您将收到：</h3>
+                    <ul class="benefits-list">
+                        <li class="benefits-item">
+                            <span class="benefits-icon">🌱</span>
+                            每周精选的可持续生活小贴士
+                        </li>
+                        <li class="benefits-item">
+                            <span class="benefits-icon">♻️</span>
+                            最新的零废弃生活实践指南
+                        </li>
+                        <li class="benefits-item">
+                            <span class="benefits-icon">💼</span>
+                            绿色办公和环保出行攻略
+                        </li>
+                        <li class="benefits-item">
+                            <span class="benefits-icon">🛍️</span>
+                            环保品牌推荐和优惠信息
+                        </li>
+                        <li class="benefits-item">
+                            <span class="benefits-icon">📚</span>
+                            独家环保资讯和专家见解
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mailchimp订阅表单 -->
+                <div class="subscribe-form">
+                    <form action="https://your-mailchimp-action-url.com/subscribe/post" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                        <div class="form-group">
+                            <label for="mce-EMAIL" class="form-label">
+                                邮箱地址 *
+                            </label>
+                            <input type="email" value="" name="EMAIL" class="form-input" id="mce-EMAIL" placeholder="请输入您的邮箱地址" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mce-FNAME" class="form-label">
+                                姓名（可选）
+                            </label>
+                            <input type="text" value="" name="FNAME" class="form-input" id="mce-FNAME" placeholder="请输入您的姓名">
+                        </div>
+
+                        <!-- 隐藏的Mailchimp字段 -->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_your_form_id_here" tabindex="-1" value="">
+                        </div>
+                        
+                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-btn">
+                            🌿 立即订阅环保资讯
+                        </button>
+                    </form>
+                    
+                    <p class="privacy-note">
+                        📋 我们承诺保护您的隐私，不会将您的邮箱分享给第三方。<br>
+                        您可以随时取消订阅，我们每周发送1-2封精心编写的邮件。
+                    </p>
+                </div>
+
+                <!-- 返回首页按钮 -->
+                <div class="back-home">
+                    <a href="index.html" class="back-btn">
+                        <span class="back-icon">🏠</span>
+                        返回首页
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 底部页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">关于我们</h4>
+                    <ul class="footer-links">
+                        <li><a href="feedback.html">留言与建议</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">热门栏目</h4>
+                    <ul class="footer-links">
+                        <li><a href="community.html">零废弃社区</a></li>
+                        <li><a href="office.html">绿色办公</a></li>
+                        <li><a href="commute.html">绿色出行</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">联系我们</h4>
+                    <p class="footer-text">有任何建议或问题？</p>
+                    <a href="feedback.html" class="btn btn-outline">💬 留言反馈</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 可持续生活指南. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

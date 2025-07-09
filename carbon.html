@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>碳足迹计算器 - 量化你的环保成果 | 可持续生活指南</title>
+    <meta name="description" content="个人碳足迹计算器，帮助都市白领量化日常生活的环保成果，制定减排目标，追踪可持续生活进展">
+    <meta name="keywords" content="碳足迹计算器,碳排放计算,环保量化,减排目标,可持续生活追踪">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/3b19a94980730d4727d4b275/bb6820ffca78fe0c336d2558d.js");</script>
+    </head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🌱</span>
+                        <span class="logo-text">可持续生活指南</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link">日常习惯</a></li>
+                    <li><a href="#" class="nav-link">零废弃社区</a></li>
+                    <li><a href="brands.html" class="nav-link">品牌推荐</a></li>
+                    <li><a href="#" class="nav-link">绿色出行</a></li>
+                    <li><a href="#" class="nav-link">环保资讯</a></li>
+                    <li><a href="feedback.html" class="nav-link">留言与建议</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn btn-primary">登录/注册</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 功能介绍横幅 -->
+    <section class="hero" style="background: linear-gradient(135deg, #4A7C59 0%, #6BA16E 100%); color: white;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">碳足迹计算器</h1>
+                <p class="hero-subtitle">量化你的环保成果，设定减排目标，让可持续生活看得见</p>
+                <div class="hero-actions">
+                    <button class="btn btn-secondary btn-large" style="background: white; color: #4A7C59;">开始计算</button>
+                    <button class="btn" style="border: 2px solid white; color: white; background: transparent;" onclick="document.getElementById('features').scrollIntoView()">了解功能</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-placeholder" style="font-size: 4rem;">📊</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能概述 -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">碳足迹计算器功能</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3 class="feature-title">家居碳排放</h3>
+                    <p class="feature-desc">计算用电、用水、燃气等家庭能源消耗产生的碳排放量</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3 class="feature-title">交通碳足迹</h3>
+                    <p class="feature-desc">统计私家车、公共交通、飞行等出行方式的碳排放</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍽️</div>
+                    <h3 class="feature-title">饮食碳影响</h3>
+                    <p class="feature-desc">评估不同饮食习惯对环境的碳排放影响</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛍️</div>
+                    <h3 class="feature-title">消费碳核算</h3>
+                    <p class="feature-desc">计算购物、娱乐等消费行为的间接碳排放</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3 class="feature-title">进度追踪</h3>
+                    <p class="feature-desc">可视化展示碳减排进展，设定并监控环保目标</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">环保建议</h3>
+                    <p class="feature-desc">基于计算结果提供个性化的减排建议和行动方案</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要作用介绍 -->
+    <section style="background: #f8f9fa; padding: 80px 0;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title">为什么需要碳足迹计算器？</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px;">
+                    <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                        <div style="width: 60px; height: 60px; background: #4A7C59; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 24px;">📋</div>
+                        <h3 style="color: #4A7C59; margin-bottom: 16px;">量化环保行为</h3>
+                        <p style="color: #666; line-height: 1.6;">将抽象的环保概念转化为具体可衡量的数据，让你清楚知道每个行为的环保价值。一次骑行替代开车能减少多少碳排放？选择素食一餐能为地球节省什么？</p>
+                    </div>
+                    <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                        <div style="width: 60px; height: 60px; background: #4A7C59; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 24px;">🎯</div>
+                        <h3 style="color: #4A7C59; margin-bottom: 16px;">设定减排目标</h3>
+                        <p style="color: #666; line-height: 1.6;">基于个人基线数据制定可实现的减排目标。无论是每月减少10%的家庭用电，还是一年减少30%的交通碳排放，都有清晰的数据支撑。</p>
+                    </div>
+                    <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                        <div style="width: 60px; height: 60px; background: #4A7C59; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 24px;">📊</div>
+                        <h3 style="color: #4A7C59; margin-bottom: 16px;">追踪环保进展</h3>
+                        <p style="color: #666; line-height: 1.6;">通过可视化图表展示你的环保历程，记录每一个改善环保习惯的里程碑。看到进步曲线是坚持可持续生活的最大动力。</p>
+                    </div>
+                    <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                        <div style="width: 60px; height: 60px; background: #4A7C59; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 24px;">💡</div>
+                        <h3 style="color: #4A7C59; margin-bottom: 16px;">获取改善建议</h3>
+                        <p style="color: #666; line-height: 1.6;">根据你的碳足迹分析报告，获得个性化的环保改善建议。系统会推荐最适合你生活方式的减排方案，让环保行动更精准有效。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工具预览 -->
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title">计算器功能预览</h2>
+            <div style="background: #f8f9fa; border-radius: 12px; padding: 60px; margin-top: 40px; text-align: center;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 40px;">
+                    <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        <div style="color: #4A7C59; font-size: 2rem; margin-bottom: 10px;">⚡</div>
+                        <h4 style="color: #4A7C59;">能源使用</h4>
+                        <p style="color: #666; font-size: 14px;">电力、天然气、水</p>
+                    </div>
+                    <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        <div style="color: #4A7C59; font-size: 2rem; margin-bottom: 10px;">🚌</div>
+                        <h4 style="color: #4A7C59;">出行方式</h4>
+                        <p style="color: #666; font-size: 14px;">汽车、公交、地铁、飞机</p>
+                    </div>
+                    <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        <div style="color: #4A7C59; font-size: 2rem; margin-bottom: 10px;">🥬</div>
+                        <h4 style="color: #4A7C59;">饮食习惯</h4>
+                        <p style="color: #666; font-size: 14px;">肉类、蔬菜、本地食材</p>
+                    </div>
+                    <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        <div style="color: #4A7C59; font-size: 2rem; margin-bottom: 10px;">♻️</div>
+                        <h4 style="color: #4A7C59;">消费行为</h4>
+                        <p style="color: #666; font-size: 14px;">购物、回收、二手物品</p>
+                    </div>
+                </div>
+                <div style="background: #4A7C59; color: white; padding: 30px; border-radius: 8px; max-width: 400px; margin: 0 auto;">
+                    <h3 style="margin-bottom: 10px;">你的月度碳足迹</h3>
+                    <div style="font-size: 3rem; font-weight: bold; margin: 20px 0;">2.3</div>
+                    <p style="margin-bottom: 15px;">吨 CO₂</p>
+                    <div style="background: rgba(255,255,255,0.2); height: 4px; border-radius: 2px; margin: 20px 0;">
+                        <div style="background: #90EE90; height: 4px; width: 70%; border-radius: 2px;"></div>
+                    </div>
+                    <p style="font-size: 14px;">比上月减少 0.4 吨 CO₂ ↓</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 未来开发方向 -->
+    <section style="background: #4A7C59; color: white; padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">未来开发方向</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px;">
+                <div style="background: rgba(255,255,255,0.1); padding: 40px; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🤖</div>
+                    <h3 style="margin-bottom: 20px; color: white;">AI智能分析</h3>
+                    <p style="line-height: 1.6; opacity: 0.9;">运用机器学习算法分析用户行为模式，提供更精准的碳排放预测和个性化减排建议。AI助手将成为你的专属环保顾问。</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 40px; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">📱</div>
+                    <h3 style="margin-bottom: 20px; color: white;">移动APP</h3>
+                    <p style="line-height: 1.6; opacity: 0.9;">开发专属移动应用，支持实时数据录入、碳足迹提醒、环保成就分享，让绿色生活随时随地可管理。</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 40px; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🏆</div>
+                    <h3 style="margin-bottom: 20px; color: white;">社区挑战</h3>
+                    <p style="line-height: 1.6; opacity: 0.9;">打造环保社区，支持好友PK、家庭挑战、公司团队减排竞赛，让环保变成有趣的社交活动。</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 40px; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🌍</div>
+                    <h3 style="margin-bottom: 20px; color: white;">碳中和市场</h3>
+                    <p style="line-height: 1.6; opacity: 0.9;">连接碳交易平台，用户可以通过减排行为获得碳积分，参与碳中和项目投资，让环保产生真实经济价值。</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 40px; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🔗</div>
+                    <h3 style="margin-bottom: 20px; color: white;">IoT设备集成</h3>
+                    <p style="line-height: 1.6; opacity: 0.9;">集成智能家居设备、可穿戴设备数据，自动监测能源使用和活动模式，实现碳足迹的无感知自动化记录。</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 40px; border-radius: 12px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">📊</div>
+                    <h3 style="margin-bottom: 20px; color: white;">企业版工具</h3>
+                    <p style="line-height: 1.6; opacity: 0.9;">为企业客户提供员工碳足迹管理、企业ESG报告生成、供应链碳排放分析等B端解决方案。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行动号召 -->
+    <section style="padding: 80px 0; text-align: center;">
+        <div class="container">
+            <h2 style="color: #4A7C59; margin-bottom: 20px;">开始你的碳足迹管理之旅</h2>
+            <p style="color: #666; font-size: 18px; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                量化环保行为，设定减排目标，追踪绿色生活进展。<br>
+                每一个数据背后，都是你为地球做出的贡献。
+            </p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <button class="btn btn-primary btn-large" style="background: #4A7C59;">即将推出，敬请期待</button>
+                <a href="index.html" class="btn btn-secondary btn-large">返回首页</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 相关功能导航 -->
+    <section style="background: #f8f9fa; padding: 60px 0;">
+        <div class="container">
+            <h3 style="text-align: center; color: #4A7C59; margin-bottom: 40px;">探索更多环保工具</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <a href="home-habits.html" style="background: white; padding: 30px; border-radius: 12px; text-decoration: none; color: inherit; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 2rem; margin-bottom: 15px; color: #4A7C59;">🏠</div>
+                    <h4 style="color: #4A7C59; margin-bottom: 10px;">家居环保习惯</h4>
+                    <p style="color: #666; font-size: 14px;">7个简单易行的家居环保小习惯</p>
+                </a>
+                <a href="commute-habits.html" style="background: white; padding: 30px; border-radius: 12px; text-decoration: none; color: inherit; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 2rem; margin-bottom: 15px; color: #4A7C59;">🚌</div>
+                    <h4 style="color: #4A7C59; margin-bottom: 10px;">绿色通勤指南</h4>
+                    <p style="color: #666; font-size: 14px;">让上下班路上也能为地球出力</p>
+                </a>
+                <a href="diet-habits.html" style="background: white; padding: 30px; border-radius: 12px; text-decoration: none; color: inherit; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 2rem; margin-bottom: 15px; color: #4A7C59;">🥗</div>
+                    <h4 style="color: #4A7C59; margin-bottom: 10px;">饮食环保革命</h4>
+                    <p style="color: #666; font-size: 14px;">从餐桌开始的绿色革命</p>
+                </a>
+                <a href="brands.html" style="background: white; padding: 30px; border-radius: 12px; text-decoration: none; color: inherit; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 2rem; margin-bottom: 15px; color: #4A7C59;">🛍️</div>
+                    <h4 style="color: #4A7C59; margin-bottom: 10px;">可持续品牌</h4>
+                    <p style="color: #666; font-size: 14px;">精选环保品牌推荐</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">关于我们</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">平台介绍</a></li>
+                        <li><a href="#">团队信息</a></li>
+                        <li><a href="feedback.html">留言与建议</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">服务支持</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">用户协议</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">关注我们</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">微博</a>
+                        <a href="#" class="social-link">微信</a>
+                        <a href="#" class="social-link">抖音</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">联系我们</h4>
+                    <p class="footer-text">有任何建议或问题？</p>
+                    <a href="feedback.html" class="btn btn-outline">💬 留言反馈</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 可持续生活指南. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
